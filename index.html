@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yandex NodeJS School</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0
+		}
+		body,html {
+			width: 100%;
+			height: 100%;
+			min-width: 320px;
+			text-align: center;
+		}
+		#myForm {
+			display: inline-block;
+			margin: 0 auto;
+			padding-top: 1em;
+		}
+		#myForm fieldset {
+			padding: 0 1em;
+		}
+		#myForm fieldset div input {
+			display: block;
+			height: 2em;
+			line-height: 2em;
+			border: 1px solid #ccc;
+		}
+		#myForm div {
+			margin: 2em 0;
+			text-align: left;
+		}
+		#myForm fieldset div input.error {
+			border: 1px solid red
+		}
+		#submitButton {
+			display: block;
+			margin: 0 auto;
+			padding: .85em 1.5em;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form id="myForm">
+		<fieldset>
+			<legend>myForm validation</legend>
+			<div>
+				<label for="fio">ФИО:</label>
+				<input type="text" name="fio" id="fio">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email">
+			</div>
+			<div>
+				<label for="tel">Телефон:</label>
+				<input type="tel" name="phone" id="phone">
+			</div>
+			<div>
+				<button id="submitButton" type="submit">Отправить</button>
+			</div>
+		</fieldset>
+		<div id="resultContainer"></div>
+	</form>
+	<script src="jquery.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
